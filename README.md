@@ -76,38 +76,42 @@ module.exports = {
 };
 
 ```
+### Starting from scratch: ###
 
-### Alternativelly you can also start from scratch:
+ 1. Make sure you have `npx` installed in node.
 
- 1. Go to the console and type `npx create-mf-app`.
+ 2. Go to the console and type `npx create-mf-app`.
 
- 2. You will be asked several questions to setup your project.
+ 3. You will be asked several questions to setup your project.
 
- 3. Pick the ones of your choice and let's begin.
+ 4. Pick the ones of your choice and let's begin.
 
- ### Workshop tasks:
+ ### Workshop tasks: ###
 
- Note: Don´t stress out, just do what you can achieve from the tasks below using the time you have, and if you get stuck, take a look into the example or into the official [webpack module federation examples repo](https://github.com/module-federation/module-federation-examples).
+ Note: Don´t stress out, just do what you can achieve from the tasks below using the time you have, and if you get stuck, take a look into the example from this repo or into the official [webpack module federation examples repo](https://github.com/module-federation/module-federation-examples), or take a look into the official [webpack module federation documentation](https://webpack.js.org/concepts/module-federation/).
 
- 1. Configure `webpack.config.json` file for remote and host.
+ 1. Using the comand `npx create-mf-app` create 2 new sites: `remote` running on port :3001 and `host` running on port :3002
 
- 2. Create a component and expose it from the remote and import it in the host.
+ 2. Use the example above to configure `webpack.config.json` file for remote and host.
 
- 3. Use persons.js array as data source and the persons image directory from the repo in the remote and expose them.
+ 3. In the `remote` running on port :3001 Create a button component that receives color, text and an `onClick` method to `console.log()` some text and expose it from the remote and import it into the host.
 
- 4. Using that data source create a carousel component in the remote and expose it.
+ 4. Use persons.js array as data source and the persons image directory from the repo create a carousel component in the `remote` running on port :3001. 
 
- 5. In the host runing on port :3002 import the carousel.
+ 5. Configure `webpack.config.json` to expose the carousel component.
 
- 6. Create a third  module federation site using the comand `npx create-mf-app` and configure webpack to run this site on port :3003 to consume data from the remote runing on port :3001.
+ 6. In the `host` running on port :3002 import the carousel.
 
- 7. Import the data source from the remote and create a filter component to perform searches using that same data source.
+ 7. Create a third  module federation site named `hybrid` using the comand `npx create-mf-app` and configure `webpack.config.json` to run this site on port :3003.
 
- 8. Import the carousel.
+ 8. In the `hybrid` site running on port :3003 import the data source from the `remote` site running on port :3001 and create a filter component to perform searches using that same data source.
 
- 9. Configure the third site runing on port :3003 as a remote to expose the filter module.
+ 9. Import the carousel into the the `hybrid` site running on port :3003.
 
- 10. On the site runing on port :3002, import the search module from the new remote site runing on port :3003
+ 10. Configure the `hybrid` site running on port :3003 as a remote to expose the filter component.
 
- 11. Create fallbacks for the imported modules to have an error handling in place whenerver the modules are not available. 
+ 11. In the `host` site running on port :3002 configure the `hybrid` site running on port :3003 as a remote.
 
+ 12. In the `host` site running on port :3002, import the search module from the `hybrid` site running on port :3003
+
+ 13. Create fallbacks for the imported modules to have an error handling in place whenerver the modules are not available. 

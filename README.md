@@ -94,7 +94,7 @@ module.exports = {
 
  2. Use the example above to configure `webpack.config.json` file for remote and host.
 
- 3. In the `remote` running on port :3001 Create a button component that receives color, text and an `onClick` method to `console.log()` some text and expose it from the remote and import it into the host.
+ 3. In the `remote` running on port :3001 Create a button component that receives color, text and an `onClick` method to `console.log()` some text and expose it from the `remote` running on port :3001 and import it into the `host` running on port :3002.
 
  4. Use persons.js array as data source and the persons image directory from the repo create a carousel component in the `remote` running on port :3001. 
 

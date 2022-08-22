@@ -1,5 +1,7 @@
 # Module federation workshop
 
+In this workshop exercise we will try to demonstrate how to use webpack 5 module federation plugin to export/import different MFE (Micro Front End) applications and javascript modules throughout different sites, and some of the different architectural options derived from MFE utilisation.
+
  ### Configuring remote
      
  ```javascript

@@ -1,17 +1,4 @@
-# Module federation example
-
-This example demos a basic host application loading a remote component.
-
-- `host` is the host application Javascript Module consumer.
-- `remote` remote app which exposes `Button` component Javascript Module.
-
-### Running Demo
-
- Go into each folder and run npm install this will run the host on port 3001 and the remote on port 3002
-
- In your browser open both:
- - [localhost:3001](http://localhost:3001/) (REMOTE)
- - [localhost:3002](http://localhost:3002/) (HOST)
+# Module federation workshop
 
  ### Configuring remote
      
@@ -138,7 +125,12 @@ const App = () => (
 
  Note: Don´t stress out, just do what you can achieve from the tasks below using the time you have, and if you get stuck, you'll be given instructions to download the corresponding solution, or take a look into the official [webpack module federation examples repo](https://github.com/module-federation/module-federation-examples), or into the official [webpack module federation documentation](https://webpack.js.org/concepts/module-federation/).
 
- 1. Grab the content from the master branch in the repo and move to the`bootstrap` folder. In the console run `npm install`. 
+ 1. Grab the content from the master branch in the repo and move to the`bootstrap` folder. In the console run `npm install` for both `remote` and `host`. 
+
+ In your browser open both:
+ - [localhost:3001](http://localhost:3001/) (REMOTE)
+ - [localhost:3002](http://localhost:3002/) (HOST)
+
  If you want to start from scratch:
  
       a)  Make sure you have `npx` installed in node. 
@@ -149,7 +141,7 @@ const App = () => (
 
  2. Use the webpack configuration example above to configure `webpack.config.json` file for both the remote and the host and run `npm start` in the terminal for both projects.
 
- 3. In the `remote` running on port :3001 Create a button component that receives color, text and expose it from the `remote` running on port :3001 and import it into the `host` running on port :3002.
+ 3. In the `remote` running on port :3001 Create a button component that receives color and text and expose it from the `remote` running on port :3001 and import it into the `host` running on port :3002.
 
  4. Use persons.js array as data source and the persons image directory from the repo, import them into the remote grab the carousel component (Note: you'll need to install [Semantic UI React](https://react.semantic-ui.com/usage) `npm install semantic-ui-react semantic-ui-css` ) and place it into the `remote` running on port :3001. 
 
@@ -167,4 +159,4 @@ const App = () => (
 
  11. In the `host` site running on port :3002 configure the `hybrid` site running on port :3003 as a remote.
 
- 12. In the `host` site running on port :3002, import the search module from the `hybrid` site running on port :3003
+ 12. In the `host` site running on port :3002, import the filter module from the `hybrid` site running on port :3003

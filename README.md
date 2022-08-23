@@ -1,17 +1,6 @@
-# Module federation example
+# Module federation workshop
 
-This example demos a basic host application loading a remote component.
-
-- `host` is the host application Javascript Module consumer.
-- `remote` remote app which exposes `Button` component Javascript Module.
-
-### Running Demo
-
- Go into each folder and run npm install this will run the host on port 3001 and the remote on port 3002
-
- In your browser open both:
- - [localhost:3001](http://localhost:3001/) (REMOTE)
- - [localhost:3002](http://localhost:3002/) (HOST)
+In this workshop exercise we will try to demonstrate how to use webpack 5 module federation plugin to export/import different MFE (Micro Front End) applications and javascript modules throughout different sites, and some of the different architectural options derived from MFE utilisation.
 
  ### Configuring remote
      
@@ -136,9 +125,14 @@ const App = () => (
 
  ### Workshop tasks: ###
 
- Note: Don´t stress out, just do what you can achieve from the tasks below using the time you have, and if you get stuck, you'll be given instructions to download the corresponding solution, or take a look into the official [webpack module federation examples repo](https://github.com/module-federation/module-federation-examples), or into the official [webpack module federation documentation](https://webpack.js.org/concepts/module-federation/).
+ Note: Don´t stress out, just do what you can achieve from the tasks below using the time you have. If you get stuck, just ask you'll be given instructions to help you moving forward, or you can take a look into the official [webpack module federation examples repo](https://github.com/module-federation/module-federation-examples), or into the official [webpack module federation documentation](https://webpack.js.org/concepts/module-federation/).
 
- 1. Grab the content from the master branch in the repo and move to the`bootstrap` folder. In the console run `npm install`. 
+ 1. Grab the content from the master branch in the repo and move to the`bootstrap` folder. In the console run `npm install` both `remote` and `host` folders. 
+
+ In your browser open both:
+ - [localhost:3001](http://localhost:3001/) (REMOTE)
+ - [localhost:3002](http://localhost:3002/) (HOST)
+
  If you want to start from scratch:
  
       a)  Make sure you have `npx` installed in node. 
@@ -149,22 +143,25 @@ const App = () => (
 
  2. Use the webpack configuration example above to configure `webpack.config.json` file for both the remote and the host and run `npm start` in the terminal for both projects.
 
- 3. In the `remote` running on port :3001 Create a button component that receives color, text and expose it from the `remote` running on port :3001 and import it into the `host` running on port :3002.
+ 3. In the `remote` running on port :3001 Create a button component that receives color and text and expose it from the `remote` running on port :3001 and import it into the `host` running on port :3002.
 
- 4. Use persons.js array as data source and the persons image directory from the repo, import them into the remote grab the carousel component (Note: you'll need to install [Semantic UI React](https://react.semantic-ui.com/usage) `npm install semantic-ui-react semantic-ui-css` ) and place it into the `remote` running on port :3001. 
+ 4. Use persons.js array as data source and the persons image directory from the repo, import them into the `remote` running on port :3001. 
 
- 5. Configure `webpack.config.json` to expose the carousel component.
+ 5. Configure `webpack.config.json` to expose the `Button` component and `persons.js`.
 
- 6. In the `host` running on port :3002 configure `webpack.config.json` to import the carousel.
+ 6. In the `host` running on port :3002 configure `webpack.config.json` to import the `Button` component, import it and show in the page.
 
- 7. Create a third  module federation site named `hybrid` using the comand `npx create-mf-app` or duplicating some of the others sites and configure `webpack.config.json` to run this site on port :3003.
+ 7. Create a third  module federation site named `hybrid` duplicating some of the other sites or using the comand `npx create-mf-app` and configure `webpack.config.json` to run this site on port :3003. 
 
- 8. In the `hybrid` site running on port :3003 import the data source from the `remote` site running on port :3001 and create a filter component to perform searches using that same data source.
+ 8. Configure the `remote` site running on port :3001 as a remote in the `hybrid` site running on port :3003.
 
- 9. Import the carousel into the the `hybrid` site running on port :3003.
+ 9. Import the `Button` component in the `hybrid` site running on port :3003, show in the page. 
 
- 10. Configure the `hybrid` site running on port :3003 as a remote to expose the filter component.
+ 10. Grab the `Carousel` and `PersonCard` component from the components folder (Note: you'll need to install [Semantic UI React](https://react.semantic-ui.com/usage) `npm install semantic-ui-react semantic-ui-css`). 
+ Show the components in the `hybrid` site running on port :3003.
 
- 11. In the `host` site running on port :3002 configure the `hybrid` site running on port :3003 as a remote.
+ 11. In the `hybrid` site running on port :3003 import the data source from the `remote` site running on port :3001 and grab the `PersonFilter` component from the components folder to perform searches using that same data source. Show the `PersonFilter` in the `hybrid` site and configure `webpack.config.json` to expose the `PersonFilter` component.
 
- 12. In the `host` site running on port :3002, import the search module from the `hybrid` site running on port :3003
+ 12. In the `host` site running on port :3002 configure the `hybrid` site running on port :3003 as a remote.
+
+ 13. In the `host` site running on port :3002, import the `PersonFilter` component from the `hybrid` site running on port :3003 and show it in the page

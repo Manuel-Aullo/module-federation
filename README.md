@@ -125,7 +125,7 @@ const App = () => (
 
  ### Workshop tasks: ###
 
- Note: Don´t stress out, just do what you can achieve from the tasks below using the time you have. If you get stuck, just ask you'll be given instructions to help you moving forward, or you can take a look into the official [webpack module federation examples repo](https://github.com/module-federation/module-federation-examples), or into the official [webpack module federation documentation](https://webpack.js.org/concepts/module-federation/).
+ Note: Don´t stress out, just do what you can achieve from the tasks below using the time you have. If you get stuck just ask, you'll be given instructions to help you moving forward, or you can take a look into the official [webpack module federation examples repo](https://github.com/module-federation/module-federation-examples), or into the official [webpack module federation documentation](https://webpack.js.org/concepts/module-federation/).
 
  1. Grab the content from the master branch in the repo and move to the`bootstrap` folder. In the console run `npm install` both `remote` and `host` folders. 
 

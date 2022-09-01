@@ -9,34 +9,34 @@ import person8 from "../persons/person8.jpg"
 export default [
     {
         name:"Paul",
-        age:"33",
+        age:"63",
         profession:"Lawyer",
         image:person1
     },
     {
         name:"Linda",
-        age:"31",
+        age:"21",
         profession:"CEO",
         image:person2
 
     },
     {
         name:"Agatha",
-        age:"28",
+        age:"25",
         profession:"Economist",
         image:person3
 
     },
     {
         name:"Laura",
-        age:"43",
+        age:"33",
         profession:"Banker",
         image:person4
 
     },
     {
         name:"Steven",
-        age:"65",
+        age:"75",
         profession:"Enterpreneur",
         image:person5
 

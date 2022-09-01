@@ -7,7 +7,7 @@ const PersonFilter = () => {
     const [filterValue,setFilterValue] = useState("");
 return(
     <>
-    <Input value={filterValue} onChange={(e)=> setFilterValue(e.target.value)}/>
+    <Input placeholder="Search by name" value={filterValue} onChange={(e)=> setFilterValue(e.target.value)}/>
     <Card.Group>
     {
   persons

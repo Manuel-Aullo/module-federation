@@ -170,8 +170,6 @@ const App = () => (
 
 - [Repo](https://github.com/KnowitJSTSGuild/module-federation)
 
-- [Slides](https://knowit-my.sharepoint.com/:p:/g/personal/manuel_aullo-perez_knowit_fi/EaAloTDwvUFPipBZRSHVJ0oBs9uuApEag9Wh4-zw03RGww?e=Sr0j7W)
-
 - [Documentation](https://webpack.js.org/plugins/module-federation-plugin/#options)
 
 - [Some reading](https://medium.com/swlh/webpack-5-module-federation-a-game-changer-to-javascript-architecture-bcdd30e02669)

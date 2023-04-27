@@ -1,57 +1,65 @@
+import person1 from "../persons/person1.jpg"
+import person2 from "../persons/person2.jpg"
+import person3 from "../persons/person3.jpg"
+import person4 from "../persons/person4.jpg"
+import person5 from "../persons/person5.jpg"
+import person6 from "../persons/person6.jpg"
+import person7 from "../persons/person7.jpg"
+import person8 from "../persons/person8.jpg"
 export default [
     {
         name:"Paul",
         age:"33",
         profession:"Lawyer",
-        image:"http://localhost:3001/images/person1.jpg"
+        image:person1
     },
     {
         name:"Linda",
         age:"31",
         profession:"CEO",
-        image:"http://localhost:3001/images/person2.jpg"
+        image:person2
 
     },
     {
         name:"Agatha",
         age:"28",
         profession:"Economist",
-        image:"http://localhost:3001/images/person3.jpg"
+        image:person3
 
     },
     {
         name:"Laura",
         age:"43",
         profession:"Banker",
-        image:"http://localhost:3001/images/person4.jpg"
+        image:person4
 
     },
     {
         name:"Steven",
         age:"65",
         profession:"Enterpreneur",
-        image:"http://localhost:3001/images/person5.jpg"
+        image:person5
 
     },
     {
         name:"Louis",
         age:"21",
         profession:"Student",
-        image:"http://localhost:3001/images/person6.jpg"
+        image:person6
 
     },
     {
         name:"Amelie",
         age:"30",
         profession:"Lawyer",
-        image:"http://localhost:3001/images/person7.jpg"
+        image:person7
 
     },
     {
         name:"Jim",
         age:"39",
         profession:"Lawyer",
-        image:"http://localhost:3001/images/person8.jpg"
+        image:person8
 
     },
 ]

@@ -125,7 +125,8 @@ const App = () => (
 
  ### Workshop tasks: ###
 
- Note: Don´t stress out, just do what you can achieve from the tasks below using the time you have. If you get stuck, just ask you'll be given instructions to help you moving forward, or you can take a look into the official [webpack module federation examples repo](https://github.com/module-federation/module-federation-examples), or into the official [webpack module federation documentation](https://webpack.js.org/concepts/module-federation/).
+
+ Note: Don´t stress out, just do what you can achieve from the tasks below using the time you have. If you get stuck just ask, you'll be given instructions to help you moving forward, or you can take a look into the official [webpack module federation examples repo](https://github.com/module-federation/module-federation-examples), or into the official [webpack module federation documentation](https://webpack.js.org/concepts/module-federation/).
 
  1. Grab the content from the master branch in the repo and move to the`bootstrap` folder. In the console run `npm install` both `remote` and `host` folders. 
 
@@ -165,3 +166,53 @@ const App = () => (
  12. In the `host` site running on port :3002 configure the `hybrid` site running on port :3003 as a remote.
 
  13. In the `host` site running on port :3002, import the `PersonFilter` component from the `hybrid` site running on port :3003 and show it in the page
+ 
+ ## Module federation
+
+- [Repo](https://github.com/Manuel-Aullo/module-federation)
+
+- [Documentation](https://webpack.js.org/plugins/module-federation-plugin/#options)
+
+- [Some reading](https://medium.com/swlh/webpack-5-module-federation-a-game-changer-to-javascript-architecture-bcdd30e02669)
+
+- [Module federation examples repo](https://github.com/module-federation/module-federation-examples)
+
+- [Micro front ends](https://microfrontends.info/microfrontends/)
+
+- [Jack Herrington Youtube playlist](https://www.youtube.com/watch?v=432thqUKs-Y&list=PLNqp92_EXZBLr7p7hn6IYa1YPNs4yJ1t1)
+
+**Further reading**
+
+[Practical Module Federation](https://module-federation.myshopify.com/products/practical-module-federation)
+
+[Micro Frontends](https://micro-frontends.org/)
+
+[Full Site Federation in Webpack 5](https://www.jackherrington.com/full-site-federation-in-webpack-5/)
+
+[Adopting a Micro-frontends architecture](https://medium.com/dazn-tech/adopting-a-micro-frontends-architecture-e283e6a3c4f3)
+
+[Micro Frontends From Beginner to Expert](https://www.linkedin.com/pulse/micro-frontends-from-begining-expert-rany-elhousieny-phd%E1%B4%AC%E1%B4%AE%E1%B4%B0)
+
+[Micro Frontends What, Why, and How](https://www.linkedin.com/pulse/micro-frontends-what-why-how-rany-elhousieny-phd%E1%B4%AC%E1%B4%AE%E1%B4%B0/)
+
+[Understanding Micro Frontends With a Hands-On Example Using React, Webpack 5, and Module Federation](https://medium.com/nerd-for-tech/micro-front-ends-hands-on-project-63bd3327e162)
+
+[Micro Frontends Hands-On Example Using React, Webpack 5, and Module Federation: Adding a third React Micro Frontend](https://medium.com/nerd-for-tech/micro-frontends-hands-on-example-using-react-webpack-5-and-module-federation-adding-a-third-2fe8c61a73f)
+
+[Deploying Micro Frontends to AWS Step by Step Using React, Webpack 5, and Module Federation](https://www.linkedin.com/pulse/deploying-micro-frontends-aws-step-using-gitlab-react-rany)
+
+[Understanding Micro-Frontends Webpack5 configurations Step by Step](https://www.linkedin.com/pulse/understanding-micro-frontends-webpack5-configurations-rany)
+
+[Understanding Micro-Frontends Webpack5 Module Federation configurations Step by Step](https://www.linkedin.com/pulse/understanding-micro-frontends-webpack5-module-step-rany)
+
+[Micro Frontends by Martin Fowler](https://martinfowler.com/articles/micro-frontends.html)
+
+[11 Micro Frontends Frameworks You Should Know](https://itnext.io/11-micro-frontends-frameworks-you-should-know-b66913b9cd20)
+
+[Micro-frontends decisions framework](https://medium.com/@lucamezzalira/micro-frontends-decisions-framework-ebcd22256513)
+
+[Why Frontend Developers Need to be Webpack Experts](https://blog.bitsrc.io/why-frontend-developers-need-to-be-webpack-experts-32e734b6f04a)
+
+[Micro-Frontends at scale (part 1)](https://medium.com/xgeeks/micro-frontends-at-scale-part-1-a8ab67bfb773)
+
+[Frontend Architectural Patterns: Backends-For-Frontends](https://medium.com/frontend-at-scale/frontend-architectural-patterns-backend-for-frontend-29679aba886c)

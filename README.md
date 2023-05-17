@@ -179,7 +179,7 @@ const App = () => (
 
 - [Micro front ends](https://microfrontends.info/microfrontends/)
 
-- [Jack Herrington Youtube playlist](https://www.youtube.com/watch?v=432thqUKs-Y&list=PLNqp92_EXZBLr7p7hn6IYa1YPNs4yJ1t1)
+- [Jack Herrington's Youtube playlist](https://www.youtube.com/watch?v=432thqUKs-Y&list=PLNqp92_EXZBLr7p7hn6IYa1YPNs4yJ1t1)
 
 **Further reading**
 
